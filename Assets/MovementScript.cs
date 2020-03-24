@@ -1,13 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine;
 
 public class MovementScript : MonoBehaviour
 {
     public CharacterController controller;
-
-    public float speed = 3f;
+    
+    public float speed = 8f;
     public float currentSpeed;
+    public Image chillMeter;
+    private float maxSpeed = 20f;
+    private float minSpeed = 1f;
 
     void Start()
     {
@@ -31,6 +35,8 @@ public class MovementScript : MonoBehaviour
         {
             currentSpeed -= 0.1f;
         }
-        currentSpeed = Mathf.Clamp(currentSpeed, speed, 20);
+        currentSpeed = Mathf.Clamp(currentSpeed, minSpeed, maxSpeed);
+
+        chillMeter.fillAmount = currentSpeed / maxSpeed;
     }
 }
