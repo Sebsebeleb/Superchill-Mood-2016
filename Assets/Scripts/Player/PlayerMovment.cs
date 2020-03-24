@@ -98,6 +98,19 @@ public class PlayerMovment : MonoBehaviour
             //Camera.main.GetComponent<Animator>().SetBool("Walk",true);
             //Camera.main.GetComponent<Animator>().speed = 1f;
         }
+
+        if (x <= getAxisAnim && x >= 0f && y <= getAxisAnim && y >= 0f)
+        {
+            //IsIdle
+            Camera.main.GetComponent<Animator>().SetBool("IsIdle",true);
+            GameObject.Find("Weapon").GetComponent<Animator>().SetBool("IsIdle",true);
+        }
+        else
+        {
+            GameObject.Find("Weapon").GetComponent<Animator>().SetBool("IsIdle",false);
+            Camera.main.GetComponent<Animator>().SetBool("IsIdle",false);
+        }
+        
         
         direction = new Vector3(direction.x,0f,direction.z);
     }
