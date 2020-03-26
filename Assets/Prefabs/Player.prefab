@@ -5336,7 +5336,7 @@ MonoBehaviour:
   jumpforce: 200
   Grounded: {fileID: 4468961399005495843}
   getAxisAnim: 0
-  airMoveForce: 10
+  airMoveForce: 20
   moveMaxAirSpeed: 35
 --- !u!114 &477234638388744706
 MonoBehaviour:
