@@ -18,6 +18,7 @@ public class JumpPad : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
+        Debug.Log("Bounce!");
         if (Time.time < nextReady)
         {
             return;
@@ -33,10 +34,11 @@ public class JumpPad : MonoBehaviour
 
     private void Bounce(Collision other)
     {
+        
         nextReady = Time.time + Cooldown;
 
-        other.rigidbody.AddForce(transform.forward * Force, ForceMode.Impulse);
-        other.rigidbody.AddForce(transform.forward * Force * 0.03f, ForceMode.VelocityChange);
+        other.rigidbody.AddForce(transform.up * Force, ForceMode.Impulse);
+        other.rigidbody.AddForce(transform.up * Force * 0.03f, ForceMode.VelocityChange);
 
         transform.DOScale(tweenScale * tweenIntensity, tweenDuration).SetLoops(2, LoopType.Yoyo);
     }
