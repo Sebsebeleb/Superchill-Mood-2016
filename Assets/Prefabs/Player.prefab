@@ -5333,10 +5333,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Walkspeed: 15
   runSpeed: 30
-  jumpforce: 10
+  jumpforce: 200
   Grounded: {fileID: 4468961399005495843}
   getAxisAnim: 0
-  airMoveForce: 0.5
+  airMoveForce: 10
   moveMaxAirSpeed: 35
 --- !u!114 &477234638388744706
 MonoBehaviour:
