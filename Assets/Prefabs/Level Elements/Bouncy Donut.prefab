@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d06444ee5445d9a42aedfcef538ddb86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Force: 55
+  Force: 250
 --- !u!1001 &5090229558748901889
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28,17 +28,17 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: d3883913422aa8846a4be6922587cbfe,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.62
+      value: -0.17
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: d3883913422aa8846a4be6922587cbfe,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.26
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: d3883913422aa8846a4be6922587cbfe,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -14.16
+      value: -13.4
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: d3883913422aa8846a4be6922587cbfe,
         type: 3}
@@ -83,7 +83,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: d3883913422aa8846a4be6922587cbfe,
         type: 3}
       propertyPath: m_Name
-      value: Donut (1)
+      value: Bouncy Donut
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3883913422aa8846a4be6922587cbfe, type: 3}
