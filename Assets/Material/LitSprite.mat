@@ -23,7 +23,7 @@ Material:
   m_Name: LitSprite
   m_Shader: {fileID: -6465566751694194690, guid: 0aff0b751f1de7c46aabea4e1af8a5d1,
     type: 3}
-  m_ShaderKeywords: _ALPHATEST_ON _BLENDMODE_ALPHA _SURFACE_TYPE_TRANSPARENT
+  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA _ALPHATEST_ON _BLENDMODE_ALPHA _SURFACE_TYPE_TRANSPARENT
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
